@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+	<id><![CDATA[[OCMOD] Change autocomplete results from 5 to 20 in admin/controller/catalog/category.php]]></id>
+	<name><![CDATA[[OCMOD] Change autocomplete results from 5 to 20 in admin/controller/catalog/category.php]]></name>
+	<code>knns_admin_catalog_category_autocomplete_change_limit_from_5_to_20</code>
+	<version>0.1.0</version>
+	<author><![CDATA[digital4u (Nikolas Branis)]]></author>
+	<link>https://www.digital4u.gr/</link>
+	<file path="admin/controller/catalog/category.php" error="log">
+		<operation error="skip">
+			<search><![CDATA['limit'       => 5]]></search>
+			<add position="replace"><![CDATA[
+				// kanenas: knns_admin_catalog_category_autocomplete_change_limit_from_5_to_20.ocmod.xml (start) <<
+				'limit'       => 20
+				// kanenas: knns_admin_catalog_category_autocomplete_change_limit_from_5_to_20.ocmod.xml (end) <<
+			]]></add>
+		</operation>
+	</file>
+</modification>
